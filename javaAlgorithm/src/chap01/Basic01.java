@@ -10,7 +10,8 @@ public class Basic01 {
         answer = new String[tickets.length + 1];
         
         visited = new boolean[tickets.length]; // 방문 여부
-        ArrayList<String> list = new ArrayList<String>(); // 경로 list 
+        ArrayList<String> list = new ArrayList<>(); // 경로 list 
+        // Diamond Operator (+제네릭 관련) 이론 정리중 -> 티스토리 올릴 예정
         String route = "ICN"; // 경로
         dfs(tickets, list, "ICN", route);
         
@@ -40,7 +41,6 @@ public class Basic01 {
     		}
     	}
     	if(end) {
-//    		String[] routeList = route.split(",");
     		list.add(route);
     	}
     }
